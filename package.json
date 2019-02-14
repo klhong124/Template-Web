@@ -1,0 +1,19 @@
+{
+  "name": "guardian-pro",
+  "version": "1.0.0",
+  "description": "Ryan's final year project",
+  "main": "init.js",
+  "scripts": {
+    "start": "node init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klhong124/Guardian-PRO.git"
+  },
+  "author": "KWAN Lok Hongnpm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klhong124/Guardian-PRO/issues"
+  },
+  "homepage": "https://github.com/klhong124/Guardian-PRO#readme"
+}
