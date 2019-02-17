@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/klhong124/Guardian-PRO.git"
   },
-  "author": "KWAN Lok Hongnpm",
+  "author": "KWAN Lok Hong",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/klhong124/Guardian-PRO/issues"
   },
-  "homepage": "https://github.com/klhong124/Guardian-PRO#readme"
+  "homepage": "https://github.com/klhong124/Guardian-PRO#readme",
+  "dependencies": {
+    "serialport": "^7.1.4"
+  }
 }
