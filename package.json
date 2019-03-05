@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/klhong124/Guardian-PRO#readme",
   "dependencies": {
+    "apollo-server": "^2.4.8",
+    "graphql": "^14.1.1",
+    "mongodb": "^3.1.13",
     "serialport": "^7.1.4"
   }
 }
