@@ -4,7 +4,7 @@
   "description": "Ryan's final year project",
   "main": "init.js",
   "scripts": {
-    "start": "node init.js"
+    "start": "node init.js",
   },
   "repository": {
     "type": "git",
