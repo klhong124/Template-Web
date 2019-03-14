@@ -1,7 +1,10 @@
+const resolvers = {
+  Query: {
+    users: []
+    user:(obj, args, context, info) => {
+      return find(authors, { id: args.id });
+    },
+  }
+};
 
-
-const dataSources = () => ({
-    hello:"hihii",
-  })
-
-module.exports = dataSources;
+module.exports = resolvers;

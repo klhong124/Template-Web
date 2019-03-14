@@ -3,23 +3,26 @@
   "version": "1.0.0",
   "description": "Ryan's final year project",
   "main": "init.js",
+  "dependencies": {
+    "apollo-server": "^2.4.8",
+    "graphql": "^14.1.1",
+    "johnny-five": "^1.0.0",
+    "mongodb": "^3.1.13",
+    "nodemon": "^1.18.10",
+    "serialport": "^7.1.4"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node init.js",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/klhong124/Guardian-PRO.git"
   },
-  "author": "KWAN Lok Hong",
+  "author": "Ryan Kwan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/klhong124/Guardian-PRO/issues"
   },
-  "homepage": "https://github.com/klhong124/Guardian-PRO#readme",
-  "dependencies": {
-    "apollo-server": "^2.4.8",
-    "graphql": "^14.1.1",
-    "mongodb": "^3.1.13",
-    "serialport": "^7.1.4"
-  }
+  "homepage": "https://github.com/klhong124/Guardian-PRO#readme"
 }
