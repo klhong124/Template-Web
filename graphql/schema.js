@@ -3,6 +3,7 @@ const { gql } = require('apollo-server');
 const typeDefs = gql`
     schema {
     query: Query
+    mutation: Mutation
     }
     type Query {
         users: [User]
@@ -12,7 +13,10 @@ const typeDefs = gql`
         id: ID!
         name: String!
         icon: String
-        trainingSet: [String!]
+        trainSet: [String!]!
+    }
+    type Mutation {
+        addUser(name: String!, trainSet: [String!]!): User
     }
 `
 
