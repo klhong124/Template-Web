@@ -1,9 +1,10 @@
 const resolvers = {
   Query: {
-    users: []
+    users: [],
     user:(obj, args, context, info) => {
-      return find(authors, { id: args.id });
+      return {"id":"args","name":"Kenny"};
     },
+    text:{text:"hihi"}
   }
 };
 
