@@ -1,6 +1,6 @@
-const { gql } = require('apollo-server');
+var { buildSchema } = require('graphql');
 
-const typeDefs = gql`
+module.exports =  buildSchema(`
 	schema {
 		query: Query
 		mutation: Mutation
@@ -21,6 +21,4 @@ const typeDefs = gql`
 	type Mutation {
 		addUser(name: String!, trainSet: [String!]!): User
 	}
-`;
-
-module.exports = typeDefs;
+`);

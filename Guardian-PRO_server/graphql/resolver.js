@@ -1,18 +1,14 @@
-const resolvers = {
-	Query: {
-		users: () => {
-			return [ { id: 1, name: 'Alvin' }, { id: 2, name: 'Kenny' } ];
+module.exports = {
+	users: () => {
+		return [ { id: 1, name: 'Alvin' }, { id: 2, name: 'Kenny' } ];
+	},
+	user: (id) => {
+		return { id: id, name: 'Kenny' };
 		},
-		user: (_, args) => {
-			return { id: args.id, name: 'Kenny' };
-		}
-	}, //end of Query
 
-	Mutation: {
-		addUser: async (_, args) => {
-			return { id: 3, name: args.name, icon: 'ke77y', trainSet: args.trainSet };
-		}
-	} //end of Mutation
+	addUser: async ({name, trainSet}) => {
+		return { id: 3, name: name, icon: 'ke77y', trainSet: trainSet };
+	}
 };
 
-module.exports = resolvers;
+
