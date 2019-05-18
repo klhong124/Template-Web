@@ -5,3 +5,5 @@ Guardian PRO is a "smart doorbell" - an intelligent device connected with a mobi
 1. npm i johnny-five
 2. npm i graphql
 3. npm i mongodb
+4. npm i ejs
+5. npm i express-graphql

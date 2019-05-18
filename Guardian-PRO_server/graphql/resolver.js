@@ -4,11 +4,9 @@ module.exports = {
 	},
 	user: (id) => {
 		return { id: id, name: 'Kenny' };
-		},
+	},
 
-	addUser: async ({name, trainSet}) => {
-		return { id: 3, name: name, icon: 'ke77y', trainSet: trainSet };
+	addUser: async ({ name, trainSet }) => {
+		return { id: 3, name: name, icon: 'ke77y' };
 	}
 };
-
-

@@ -1,27 +1,17 @@
 {
-  "name": "guardian-pro",
-  "version": "1.0.0",
-  "description": "Ryan's final year project",
-  "main": "init.js",
-  "dependencies": {
-    "express": "^4.16.4",
-    "express-graphql": "^0.8.0",
-    "graphql": "^14.3.0",
-    "mongodb": "^3.2.4",
-    "nodemon": "^1.19.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "nodemon server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/klhong124/Guardian-PRO.git"
-  },
-  "author": "Ryan Kwan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/klhong124/Guardian-PRO/issues"
-  },
-  "homepage": "https://github.com/klhong124/Guardian-PRO#readme"
+	"name": "guardian-pro-server",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "nodemon ./bin/www"
+	},
+	"dependencies": {
+		"cookie-parser": "~1.4.4",
+		"debug": "~2.6.9",
+		"ejs": "^2.6.1",
+		"express": "~4.16.1",
+		"express-graphql": "^0.8.0",
+		"http-errors": "~1.6.3",
+		"morgan": "~1.9.1"
+	}
 }
