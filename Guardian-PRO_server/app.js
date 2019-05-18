@@ -4,7 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
+var index = require('./routes/index');
+var signUp = require('./routes/signUp');
+var createAccount = require('./routes/createAccount');
 var graphqlHTTP = require('./routes/graphqlHTTP');
 
 var app = express();
@@ -19,7 +21,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+app.use('/', index);
+app.use('/signUp', signUp);
+app.use('/createAccount', createAccount);
 app.use('/graphql', graphqlHTTP);
 
 // catch 404 and forward to error handler

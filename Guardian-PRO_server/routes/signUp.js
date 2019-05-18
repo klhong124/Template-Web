@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
     }
 	`;
 	graphql(schema, query, root).then((response) => {
-		res.render('index', response.data);
+		res.render('signUp', response.data);
 	});
 });
 

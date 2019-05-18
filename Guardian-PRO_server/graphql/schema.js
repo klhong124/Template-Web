@@ -1,24 +1,41 @@
 var { buildSchema } = require('graphql');
 
-module.exports =  buildSchema(`
+module.exports = buildSchema(`
 	schema {
 		query: Query
 		mutation: Mutation
 	}
 
 	type Query {
-		users: [User]
-		user(id: ID!): User
+		allUsers: [User]
+		users(
+			name: String
+			username:String
+			password:String
+		    gender: String
+		    email: String
+		    phone: Int
+		): [User]
 	}
 
 	type User {
-		id: ID!
+		_id: ID!
 		name: String!
-		icon: String
-		trainSet: [String!]!
+		username:String!
+		password:String!
+		gender: String
+		email: String
+		phone: Int
 	}
 
 	type Mutation {
-		addUser(name: String!, trainSet: [String!]!): User
+		addUser(
+			name: String!
+			username:String!
+			password:String!
+			gender: String
+			email: String
+			phone: Int
+			): User
 	}
 `);
