@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
 	var query = `
     query{
-      users (
+      user (
           username:"${req.body.username}"
       ){
         _id
@@ -21,8 +21,8 @@ router.post('/', function(req, res, next) {
     }
 	`;
 	graphql(schema, query, root).then((response) => {
-		if (response.data.users.length) {
-			res.cookie('userID', response.data.users[0]._id);
+		if (response.data.user) {
+			res.cookie('userID', response.data.user._id);
 			res.redirect('/');
 		} else {
 			res.render('login', { error: true });

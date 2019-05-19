@@ -16,6 +16,15 @@ module.exports = buildSchema(`
 		    email: String
 		    phone: Int
 		): [User]
+		user(
+			_id: ID
+			name: String
+			username:String
+			password:String
+		    gender: String
+		    email: String
+		    phone: Int
+		): User
 	}
 
 	type User {
@@ -29,7 +38,7 @@ module.exports = buildSchema(`
 	}
 
 	type Mutation {
-		addUser(
+		newUser(
 			name: String!
 			username:String!
 			password:String!
