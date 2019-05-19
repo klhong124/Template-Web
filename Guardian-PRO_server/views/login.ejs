@@ -7,22 +7,14 @@
 <% include partials/menu %>
 <div class="container-fluid bg-3 text-center">    
   <h3>Welcome</h3><br>
+  <h3><%=error%></h3><br>
 </div>
 <center>
-<form action="/signUp/createAccount" method="POST">
-    Name:<br>
-    <input type="text" name="name" value=""><br>
+<form action="/login" method="POST">
     Username:<br>
     <input type="text" name="username" value=""><br>
     Password:<br>
     <input type="password" name="password" value=""><br>
-    Email:<br>
-    <input type="text" name="email" value=""><br>
-    Phone:<br>
-    <input type="text" name="phone" value=""><br>
-    Gender:<br>
-    <input type="text" name="gender" value=""><br>
-    <br><br>
     <input type="submit" value="Submit">
 </form> 
 </center>

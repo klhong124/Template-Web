@@ -30,7 +30,7 @@ module.exports = {
 			return new Promise((resolve) => {
 				MongoClient.connect(url, { useNewUrlParser: true }, function(err, db) {
 					if (err) throw err;
-					db.db('Guardian-Pro').collection('users').find(input).toArray(function(err, res) {
+					db.db('Guardian-PRO').collection('users').find(input).toArray(function(err, res) {
 						if (err) throw err;
 						db.close();
 						resolve(res);
