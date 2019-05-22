@@ -11,7 +11,10 @@
 		"ejs": "^2.6.1",
 		"express": "~4.16.1",
 		"express-graphql": "^0.8.0",
+		"graphql": "^14.3.0",
 		"http-errors": "~1.6.3",
-		"morgan": "~1.9.1"
+		"mongodb": "^3.2.5",
+		"morgan": "~1.9.1",
+		"nodemon": "^1.19.0"
 	}
 }
