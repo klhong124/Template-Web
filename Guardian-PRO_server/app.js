@@ -7,6 +7,7 @@ var logger = require('morgan');
 var index = require('./routes/index');
 var signUp = require('./routes/signUp');
 var login = require('./routes/login');
+var profile = require('./routes/profile');
 var graphqlHTTP = require('./routes/graphqlHTTP');
 
 var app = express();
@@ -24,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/signUp', signUp);
 app.use('/login', login);
+app.use('/profile', profile);
 app.use('/graphql', graphqlHTTP);
 
 // catch 404 and forward to error handler
