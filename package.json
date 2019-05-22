@@ -3,7 +3,10 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"start": "pm2 monit"
+		"start": "pm2 start bin/www",
+		"show": "pm2 show www",
+		"read": "pm2 monit",
+		"stop": "pm2 stop all"
 	},
 	"dependencies": {
 		"cookie-parser": "~1.4.4",
