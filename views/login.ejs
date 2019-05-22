@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<% include partials/head %> 
+</head>
+<body>
+<% include partials/menu %>
+<div class="container-fluid bg-3 text-center">    
+  <h3>Welcome</h3><br>
+  <h3><%=error%></h3><br>
+</div>
+<center>
+<form action="/login" method="POST">
+    Username:<br>
+    <input type="text" name="username" value=""><br>
+    Password:<br>
+    <input type="password" name="password" value=""><br>
+    <input type="submit" value="Submit">
+</form> 
+</center>
+</body>
+<% include partials/script %>
+</html>

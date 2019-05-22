@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<% include partials/head %>
+</head>
+<body>
+<% include partials/menu %>
+<div class="container-fluid bg-3 text-center">    
+  <h3>Welcome</h3><br>
+</div>
+<center>
+<% if (error) { %>
+<p style="color:red"> username already in used.</p>
+<% } %>
+<form action="/signUp" method="POST">
+    Name:<br>
+    <input type="text" name="name" value=""required><br>
+    Username:<br>
+    <input type="text" name="username" value="" required><br>
+    Password:<br>
+    <input type="password" name="password" value="" required><br>
+    Email:<br>
+    <input type="text" name="email" value="" required><br>
+    Phone:<br>
+    <input type="tel" name="phone" value="" required><br>
+    Gender:<br>
+    <input type="radio" name="gender" value="male" checked>Male
+    <input type="radio" name="gender" value="female">Female
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+</center>
+</body>
+<% include partials/script %>
+
+</html>
