@@ -1,10 +1,10 @@
 var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectId;
-var url = 'mongodb://localhost:27017/Guardian-Pro';
+var url = 'mongodb://localhost:27017/CRM-DB';
 
 MongoClient.connect(url, { useNewUrlParser: true }, function(err, db) {
 	if (err) throw err;
-	db.db('Guardian-PRO').createCollection('users', function(err, res) {
+	db.db('CRM-DB').createCollection('users', function(err, res) {
 		if (err) throw err;
 	});
 });
@@ -15,7 +15,7 @@ module.exports = {
 			return new Promise((resolve) => {
 				MongoClient.connect(url, { useNewUrlParser: true }, function(err, db) {
 					if (err) throw err;
-					db.db('Guardian-PRO').collection('users').find({}).toArray(function(err, res) {
+					db.db('CRM-DB').collection('users').find({}).toArray(function(err, res) {
 						if (err) throw err;
 						db.close();
 						resolve(res);
@@ -31,7 +31,7 @@ module.exports = {
 			return new Promise((resolve) => {
 				MongoClient.connect(url, { useNewUrlParser: true }, function(err, db) {
 					if (err) throw err;
-					db.db('Guardian-PRO').collection('users').find(input).toArray(function(err, res) {
+					db.db('CRM-DB').collection('users').find(input).toArray(function(err, res) {
 						if (err) throw err;
 						db.close();
 						resolve(res);
@@ -50,7 +50,7 @@ module.exports = {
 			return new Promise((resolve) => {
 				MongoClient.connect(url, { useNewUrlParser: true }, function(err, db) {
 					if (err) throw err;
-					db.db('Guardian-PRO').collection('users').findOne(input, function(err, res) {
+					db.db('CRM-DB').collection('users').findOne(input, function(err, res) {
 						if (err) throw err;
 						db.close();
 						resolve(res);
@@ -66,7 +66,7 @@ module.exports = {
 			return new Promise((resolve) => {
 				MongoClient.connect(url, { useNewUrlParser: true }, function(err, db) {
 					if (err) throw err;
-					db.db('Guardian-PRO').collection('users').insertOne({
+					db.db('CRM-DB').collection('users').insertOne({
 						name: name,
 						username: username,
 						password: password,

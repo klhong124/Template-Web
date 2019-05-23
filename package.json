@@ -1,9 +1,12 @@
 {
-	"name": "guardian-pro-server",
+	"name": "CRM-server",
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"start": "pm2 monit"
+		"start": "pm2 start bin/www",
+		"show": "pm2 show www",
+		"monit": "pm2 monit",
+		"stop": "pm2 stop all"
 	},
 	"dependencies": {
 		"cookie-parser": "~1.4.4",
@@ -11,7 +14,9 @@
 		"ejs": "^2.6.1",
 		"express": "~4.16.1",
 		"express-graphql": "^0.8.0",
+		"graphql": "^14.3.0",
 		"http-errors": "~1.6.3",
+		"mongodb": "^3.2.5",
 		"morgan": "~1.9.1",
 		"pm2": "^3.5.0"
 	}
