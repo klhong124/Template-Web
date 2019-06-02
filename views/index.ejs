@@ -4,6 +4,11 @@
 <% include partials/head %> 
 </head>
 <body>
+<script>
+  $(document).ready(function(){
+      $('#home').addClass('active');
+  });
+</script>
 <%if (login) { %>
   <% include partials/menu-login %>
 <% } else { %>
