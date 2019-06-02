@@ -3,8 +3,8 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"start": "pm2 start bin/www",
-		"show": "pm2 show www",
+		"start": "pm2 start bin/Guardian-PRO",
+		"show": "pm2 show Guardian-PRO",
 		"monit": "pm2 monit",
 		"stop": "pm2 stop all"
 	},
