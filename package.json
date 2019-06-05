@@ -3,8 +3,8 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"start": "pm2 start bin/Guardian-PRO",
-		"show": "pm2 show Guardian-PRO",
+		"start": "pm2 start bin/CRM",
+		"show": "pm2 show CRM",
 		"monit": "pm2 monit",
 		"stop": "pm2 stop all"
 	},
