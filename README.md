@@ -1,5 +1,5 @@
 ## installation requirement
-1. npm i graphql express-graphql mongodb ejs
+1. npm i graphql express-graphql mongodb ejs datatables.net datatables.net-dt
 2. npm i pm2 -g
 
 ## start server

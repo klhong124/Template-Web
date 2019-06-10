@@ -9,6 +9,7 @@ var signUp = require('./routes/signUp');
 var login = require('./routes/login');
 var profile = require('./routes/profile');
 var graphqlHTTP = require('./routes/graphqlHTTP');
+var data = require('./routes/data');
 
 var app = express();
 
@@ -27,6 +28,9 @@ app.use('/signUp', signUp);
 app.use('/login', login);
 app.use('/profile', profile);
 app.use('/graphql', graphqlHTTP);
+app.use('/data', data);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
