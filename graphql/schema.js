@@ -8,6 +8,7 @@ module.exports = buildSchema(`
 
 	type Query {
 		allUsers: [User]
+		allCustomers: [Customer]
 		users(
 			name: String
 			username:String
@@ -32,6 +33,14 @@ module.exports = buildSchema(`
 		name: String!
 		username:String!
 		password:String!
+		gender: String
+		email: String
+		phone: Int
+	}
+	type Customer{
+		_id: ID!
+		name: String!
+		company: String!
 		gender: String
 		email: String
 		phone: Int

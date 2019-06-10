@@ -7,6 +7,9 @@ MongoClient.connect(url, { useNewUrlParser: true }, function(err, db) {
 	db.db('CRM-DB').createCollection('users', function(err, res) {
 		if (err) throw err;
 	});
+	db.db('CRM-DB').createCollection('customers', function(err, res) {
+		if (err) throw err;
+	});
 });
 
 module.exports = {
@@ -16,6 +19,22 @@ module.exports = {
 				MongoClient.connect(url, { useNewUrlParser: true }, function(err, db) {
 					if (err) throw err;
 					db.db('CRM-DB').collection('users').find({}).toArray(function(err, res) {
+						if (err) throw err;
+						db.close();
+						resolve(res);
+					});
+				});
+			});
+		};
+		var result = await getResult();
+		return result;
+	},
+	allCustomers: async () => {
+		var getResult = () => {
+			return new Promise((resolve) => {
+				MongoClient.connect(url, { useNewUrlParser: true }, function(err, db) {
+					if (err) throw err;
+					db.db('CRM-DB').collection('customers').find({}).toArray(function(err, res) {
 						if (err) throw err;
 						db.close();
 						resolve(res);
