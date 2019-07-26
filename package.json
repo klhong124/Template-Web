@@ -3,8 +3,8 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"start": "pm2 start bin/CRM",
-		"show": "pm2 show CRM",
+		"start": "pm2 start bin/Template-server",
+		"show": "pm2 show Template-server",
 		"monit": "pm2 monit",
 		"stop": "pm2 stop all"
 	},
