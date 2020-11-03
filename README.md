@@ -1,9 +1,20 @@
-## installation requirement
-1. npm i graphql express-graphql mongodb ejs datatables.net datatables.net-dt
-2. npm i pm2 -g
+# SMS-Web
 
-## start server
-1. "npm start": "pm2 start bin/CRM"
-2. "npm show": "pm2 show CRM"
-3. "npm monit": "pm2 monit"
-4. "npm stop": "pm2 stop all"
+## Build Setup
+
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
