@@ -1,0 +1,20 @@
+[
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/lokhongkwan/Documents/GitHub/Web-Template/pages/login.vue",
+    "chunkName": "pages/login"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "/Users/lokhongkwan/Documents/GitHub/Web-Template/pages/register.vue",
+    "chunkName": "pages/register"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/lokhongkwan/Documents/GitHub/Web-Template/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]

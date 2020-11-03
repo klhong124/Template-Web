@@ -43,7 +43,7 @@
 
 		<v-footer :absolute="!fixed" app>
 			<span
-				>&copy; {{ new Date().getFullYear() }} SMS Web created by Ryan
+				>&copy; 2020 Web Template created by Ryan
 				Kwan</span
 			>
 		</v-footer>
@@ -58,16 +58,16 @@ export default {
 			fixed: 1,
 			items: [
 				{
-					icon: 'mdi-cellphone',
-					title: 'EPS status',
-					to: '/eps-monitor',
-				},{
-					icon: 'mdi-account',
-					title: 'Accounts',
+					icon: 'fa-home',
+					title: 'Home',
 					to: '/',
+				},{
+					icon: 'fa-user',
+					title: 'Accounts',
+					to: '/user',
 				},
 			],
-			title: 'SMS',
+			title: 'Nuxt Web-Template',
 		}
 	},
 
