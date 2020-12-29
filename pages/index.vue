@@ -10,7 +10,7 @@
 				</v-card-title>
 				<v-card-text>
 					<p>
-						Web Template by Nuxt with apollo graphql. UI with Vuetify
+						Web Template by Nuxt with apollo graphql. UI with Vuetify. login system included .
 					</p>
 				
 					<p>
